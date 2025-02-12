@@ -9,45 +9,46 @@
     section#Login {
         width: 80vw;
     }
-    
+
     section#Login > div#Imagem {
         float: left;
         width: 30%;
         height: 100%;
-    
-}
+    }
 
-section#Login > div#Formulario {
-    float: right;
-    width: 70%; }
+    section#Login > div#Formulario {
+        float: right;
+        width: 70%;
+    }
 }
 
 @media screen and (min-width: 992px) {
 
     body {
-            background-image: linear-gradient(to top, #49a09d, #5f2c82);
-        }
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+    }
 
     section#Login {
         width: 950px;
     }
-    
-    section#Login > div#Imagem {    
-    float: right;
-    width: 50%;
-    height: 100%;    
-}
 
-section#Login > div#Formulario {
-    float: left;
-    width: 50%;}
-}
+    section#Login > div#Imagem {
+        float: right;
+        width: 50%;
+        height: 100%;
+    }
 
+    section#Login > div#Formulario {
+        float: left;
+        width: 50%;
+    }
+}
 
 div#Formulario > h1 {
     font-size: 2em;
 }
 
-div#formulario>p {
+div#Formulario > p {
+    
     font-size: 1.2em;
 }
