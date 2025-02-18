@@ -19,11 +19,10 @@ main {
     position: relative;
 }
 
-section#Login {
+section#login {
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 50%;   
     overflow: hidden;
 
     background-color: white;
@@ -32,11 +31,12 @@ section#Login {
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.450);
 
+    transform: translate(-50%, -50%);
     transition: width .3s ease, height .3s ease, box-shadow .3s ease
 
 }
 
-section#Login > div#Imagem {
+section#login > div#imagem {
     background: blueviolet url("../imagens/pexels-aboodi-16563205.jpg") no-repeat center center;
     background-size: cover;
     background-position: left bottom;
@@ -45,31 +45,60 @@ section#Login > div#Imagem {
     
 }
 
-section#Login > div#Formulario {
+section#login > div#formulario {
     padding: 10px;
     display: block;
 }
 
-div#Formulario  > h1 {
+div#formulario  > h1 {
     text-align: center;
     margin-bottom: 10px;
 }
 
-div#Formulario > p {
+div#formulario > p {
     font-size: 0.8em;
 }
 
 form > div.campo {
     background-color: slateblue;
+    border: 2px solid rgb(122, 109, 212);
     display: block;
     width: 100%;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px;
 }
 
 div.campo > label {
     display: none;
+}
+
+div.campo > i {
+    color: white;
+    background-color: black;
+    font-size: 2em;
+    width: 40px;
+    padding: 8px;
+}
+
+
+
+div.campo > input {
+    background-color: #94cfcd;
+    font-size: 1em;
+    max-width: calc(100% - 44px);
+    height: 100%;
+    transform: translateY(-14px);
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+    
+    }
+    
+
+div.campo > input:focus-within {
+    background-color: white;
+    border: none;
 }
 
 form > input[type=submit] {
@@ -82,7 +111,7 @@ form > input[type=submit] {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3 ease;
+
 
 }
 
